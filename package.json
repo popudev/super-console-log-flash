@@ -51,6 +51,10 @@
       {
         "title": "Super Console Log Flash",
         "properties": {
+          "super-console-log-flash.pattern.typescript": {
+            "type": "string",
+            "default": "console.log(\"@name: \", @value);"
+          },
           "super-console-log-flash.pattern.javascript": {
             "type": "string",
             "default": "console.log(\"@name: \", @value);"
