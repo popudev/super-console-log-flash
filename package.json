@@ -2,8 +2,12 @@
   "name": "super-console-log-flash",
   "displayName": "Super Console Log Flash",
   "description": "This extension provides a quick and convenient way to insert console log statements in various programming languages.",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "publisher": "popudev",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/popudev/super-console-log-flash.git"
+  },
   "icon": "logo.jpg",
   "engines": {
     "vscode": "^1.85.0"
@@ -58,6 +62,10 @@
           "super-console-log-flash.pattern.java": {
             "type": "string",
             "default": "System.out.println(\"@name: \" + @value);"
+          },
+          "super-console-log-flash.pattern.cpp": {
+            "type": "string",
+            "default": "std::cout << \"@name: \" << @value << std::endl;"
           }
         }
       }

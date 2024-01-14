@@ -34,18 +34,29 @@ This extension provides a quick and convenient way to insert console log stateme
 
 ## Extension Settings
 
-- To customize the console log pattern, create a .vscode folder in your project and add a settings.json file. Below is an example of how you can define custom patterns for different programming languages:
+- To customize the console log pattern
+
+### Using the settings.json file in the Project
+
+1. Create a .vscode folder in your project if it doesn't exist.
+2. Inside the .vscode folder, create a file named settings.json if it doesn't exist.
+3. Open the settings.json file and add the following configuration.
+
+_Below is an example of how you can define custom patterns for different programming languages:_
 
 ```json
 {
   "super-console-log-flash": {
     "pattern": {
       "javascript": "console.log(\"custom @name: \", @value);",
-      "rust": "println!(\"@name: {:?}\", @value);"
+      "rust": "println!(\"@name: {:?}\", @value);",
+      "python": "print(\"@name:\", @value)"
     }
   }
 }
 ```
+
+### Using the Setting UI
 
 ## Contribution
 
