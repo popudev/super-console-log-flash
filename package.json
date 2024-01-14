@@ -1,29 +1,65 @@
 {
-  "name": "super-console-log",
-  "displayName": "Super Console Log",
-  "description": "",
-  "version": "0.0.1",
+  "name": "super-console-log-flash",
+  "displayName": "Super Console Log Flash",
+  "description": "This extension provides a quick and convenient way to insert console log statements in various programming languages.",
+  "version": "0.0.2",
+  "publisher": "popudev",
+  "icon": "logo.jpg",
   "engines": {
     "vscode": "^1.85.0"
   },
   "categories": [
     "Other"
   ],
+  "keywords": [
+    "super",
+    "console",
+    "log",
+    "flash",
+    "console javascript flash",
+    "println rush flash",
+    "rust",
+    "javascript",
+    "typescript",
+    "popudev",
+    "super-console-log-flash",
+    "support",
+    "console.log"
+  ],
   "activationEvents": [],
   "main": "./out/extension.js",
   "contributes": {
     "commands": [
       {
-        "command": "super-console-log.log",
-        "title": "Super Console Log"
+        "command": "super-console-log-flash.log",
+        "title": "Super Console Log Flash"
       }
     ],
     "keybindings": [
       {
-        "command": "super-console-log.log",
+        "command": "super-console-log-flash.log",
         "key": "ctrl+shift+l",
         "mac": "cmd+shift+l",
         "when": "editorTextFocus"
+      }
+    ],
+    "configuration": [
+      {
+        "title": "Super Console Log Flash",
+        "properties": {
+          "super-console-log-flash.pattern.javascript": {
+            "type": "string",
+            "default": "console.log(\"@name: \", @value);"
+          },
+          "super-console-log-flash.pattern.rust": {
+            "type": "string",
+            "default": "println!(\"@name: {:#?}\", @value);"
+          },
+          "super-console-log-flash.pattern.java": {
+            "type": "string",
+            "default": "System.out.println(\"@name: \" + @value);"
+          }
+        }
       }
     ]
   },

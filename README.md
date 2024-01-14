@@ -1,4 +1,4 @@
-# Super Console Log - VSCode Extension
+# Super Console Log
 
 This extension provides a quick and convenient way to insert console log statements in various programming languages.
 
@@ -16,46 +16,36 @@ This extension provides a quick and convenient way to insert console log stateme
 
 1. Open a file in Visual Studio Code.
 2. Place the cursor at the desired location in your code.
-3. Press `Ctrl+Shift+P` to open the command palette.
-4. Type "Super Console Log" and select the "Log" command.
+3. Press `Ctrl + Shift + P` to open the command palette.
+4. Type "Super Console Log Flash" and select the "Log" command.
 
 ### Keybinding
 
 - Windows: `Control + Shift + L`
 - Mac: `Command + Shift + L`
 
-### Inserting a Basic Log Statement
-
-- If the cursor is not on a valid identifier, a basic log statement will be inserted.
-
-```js
-console.log();
-```
-
-```rust
-println!();
-```
-
-### Inserting a Log Statement with Variable
-
-- If the cursor is on a valid identifier, a log statement with the variable name will be inserted.
-
-```js
-console.log("variableName: ", variableName);
-```
-
-```rust
-println!("variableName: {:#?}", variableName);
-```
-
 ## Supported Languages
 
 - JavaScript
-- Java
 - Rust
+- Java
 - C++
+- More
 
 ## Extension Settings
+
+- To customize the console log pattern, create a .vscode folder in your project and add a settings.json file. Below is an example of how you can define custom patterns for different programming languages:
+
+```json
+{
+  "super-console-log-flash": {
+    "pattern": {
+      "javascript": "console.log(\"custom @name: \", @value);",
+      "rust": "println!(\"@name: {:?}\", @value);"
+    }
+  }
+}
+```
 
 ## Contribution
 
