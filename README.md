@@ -8,9 +8,19 @@ This extension provides a quick and convenient way to insert console log stateme
 
 - Automatically detects the programming language of the active file.
 - Inserts console log statements tailored to the detected language.
+- Support multiple cursor selection
 - Supports JavaScript, Java, Rust, C++, and more.
 
 ## Usage
+
+### Keybinding
+
+- Windows: `Control + Shift + Z`
+- Mac: `Command + Shift + Z`
+
+1. Open a file in Visual Studio Code.
+2. Place the cursor at the desired location in your code.
+3. Press `Control + Shift + Z` or `Command + Shift + Z`
 
 ### Command palette
 
@@ -19,10 +29,16 @@ This extension provides a quick and convenient way to insert console log stateme
 3. Press `Ctrl + Shift + P` to open the command palette.
 4. Type "Super Console Log Flash" and select the "Log" command.
 
-### Keybinding
+## Demo
 
-- Windows: `Control + Shift + L`
-- Mac: `Command + Shift + L`
+1. Variable
+   ![Preview](https://res.cloudinary.com/dpbbtjzhf/image/upload/v1705334153/super-console-log-flash-demo-3.gif)
+
+2. Properties
+   ![Preview](https://res.cloudinary.com/dpbbtjzhf/image/upload/v1705334277/super-console-log-flash-demo-2.gif)
+
+3. Multiple cursor selection
+   ![Preview](https://res.cloudinary.com/dpbbtjzhf/image/upload/v1705333874/super-console-log-flash-demo-4.gif)
 
 ## Supported Languages
 
