@@ -2,7 +2,7 @@
   "name": "super-console-log-flash",
   "displayName": "Super Console Log Flash",
   "description": "This extension provides a quick and convenient way to insert console log statements in various programming languages.",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "publisher": "popudev",
   "repository": {
     "type": "git",
@@ -78,7 +78,15 @@
             "type": "string",
             "default": "console.log(\"@name: \", @value);"
           },
+          "super-console-log-flash.pattern.typescriptreact": {
+            "type": "string",
+            "default": "console.log(\"@name: \", @value);"
+          },
           "super-console-log-flash.pattern.javascript": {
+            "type": "string",
+            "default": "console.log(\"@name: \", @value);"
+          },
+          "super-console-log-flash.pattern.javascriptreact": {
             "type": "string",
             "default": "console.log(\"@name: \", @value);"
           },
